@@ -37,6 +37,7 @@ def busqueda_precio(p_min, p_max):
     precio_productos = []
     p_min = int(p_min)
     p_max = int(p_max)
+    precio = 0
     try:
         for Clave, Valor in stock.items():
             for clave, valor in productos.items():
@@ -62,6 +63,7 @@ while True:
     print('2. Busqueda por precio.')
     print('3. Listado de productos')
     print('4. Salir')
+    print('5. Modificacion 2')
     
     opc = input('Ingrese que opcion: ')
     
@@ -77,8 +79,7 @@ while True:
     elif opc == '4':
         print('Programa finalizado')
         break
+    elif opc == '5':
+        print('Modificacion de github')
     else:
         print('Debe seleccionar una opcion valida!!')
-
-print ('Modificacion 1')
-
