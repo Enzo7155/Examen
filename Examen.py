@@ -35,7 +35,9 @@ def stock_marca(marca):
 
 def busqueda_precio(p_min, p_max):
     precio_productos = []
-    while True:
+    p_min = int(p_min)
+    p_max = int(p_max)
+    try:
         for Clave, Valor in stock.items():
             for clave, valor in productos.items():
                 precio = Valor
@@ -46,8 +48,8 @@ def busqueda_precio(p_min, p_max):
                     precio_productos.append[valor[0], clave]
                     print('Los nootebooks entre los precios consultados son: ', precio_productos)
                     break
-                else: 
-                    print('Debe ingresar valores enteros!!')
+    except:
+        print('Debe ingresar valores enteros!!')
 
 def ordenar_productos():
     print('------Listado de Notebooks Ordenado------')
@@ -77,3 +79,6 @@ while True:
         break
     else:
         print('Debe seleccionar una opcion valida!!')
+
+print ('Modificacion 1')
+
